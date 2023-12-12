@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="home background" id="home">
+      <header class="header">
+        <img src="logo.png" alt="logo" class="logo">
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li><a class="navbar-link" href="#home">Home</a></li>
+            <li><a class="navbar-link" href="#program">Programs</a></li>
+            <li><a class="navbar-link" href="#plan">Plans</a></li>
+            <li><a class="navbar-link" href="#bmi">BMI</a></li>
+            <li><a class="navbar-link" href="#tracker">Exercise Tracker</a></li>
+            <li><a class="navbar-link" href="#galary">Galary</a></li>
+            <li><a class="navbar-link" href="#about">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="mobile-navbar-btn">
+          <ion-icon name="menu-outline" class="mobile-nav-icon"><img src="hamburger.png" alt=""></ion-icon>
+          <ion-icon name="close-outline" class="mobile-nav-icon"></ion-icon>
+        </div>
+            
+      </header>
+      <section class="firstsection">
+        <div class="box-main">
+          <div class="firsthalf">
+            <h1 class="txtbig">Welcome to Muscle Monstor</h1>
+            <h3 class="txtsmall">A perfect place for your health</h3>
+          </div>
+          <div class="secondhalf"><img src="second.png" alt=""></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- program -->
+
+    <div class="program" id="program">
+      <div class="head">
+        <h1>Our <span>Program's</span></h1>
+      </div>
+      <div class="ourProgram">
+
+        <div class="crd">
+          <img src="dance.jpg" alt="">
+          <h2>Dance</h2>
+        </div>
+        <div class="crd">
+          <img src="cardio.jpg" alt="">
+          <h2>Cardio</h2>
+        </div>
+        <div class="crd">
+          <img src="heavy.jpg" alt="">
+          <h2>Heavy Workout</h2>
+        </div>
+        <div class="crd">
+          <img src="yoga.jpg" alt="">
+          <h2> Yoga Classes</h2>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+    <!-- plans -->
+
+    <div class="plans" id="plan">
+      <div class="head">
+        <h1>Our <span> Plan's</span></h1>
+      </div>
+      <div class="ourPlans">
+        <div class="card">
+          <i class="fa-brands fa-simplybuilt"></i>
+          <h3>Basic Package</h3>
+          <h1>3 Months</h1>
+          <p>No Personal Trainer</p>
+          <p>Cardio Excercise</p>
+          <p>Weight Lifting</p>
+          <p>Diet Plans</p>
+          <p>Overall Results</p>
+          <a href="register.html" target="_blank"><button>&#8377 3000</button></a>
+
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-right-to-bracket"></i>
+          <h3>Premium Package</h3>
+          <h1>6 Months</h1>
+          <p>Personal Trainer</p>
+          <p>Cardio Excercise</p>
+          <p>Weight Lifting</p>
+          <p>Diet Plans</p>
+          <p>Additional Equipments</p>
+          <a href="register.html" target="_blank"><button>&#8377 5000 </button></a>
+
+        </div>
+        <div class="card">
+          <i class="fa-solid fa-diamond"></i>
+          <h3>Diamond Package</h3>
+          <h1>1 Year</h1>
+          <p>Personal Trainer</p>
+          <p>Cardio Excercise</p>
+          <p>Weight Lifting</p>
+          <p>Diet Plans</p>
+          <p>Access All Equipments</p>
+          <a href="register.html" target="_blank"><button>&#8377 10000</button></a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="bmicalc" id="bmi">
+      <div class="head">
+        <h1><span>BMI</span> Calculator</h1>
+      </div>
+      <div class="bmi">
+        <h1 class="text">Calculate &nbsp;BMI</h1>
+        <p class="text">Height</p>
+        <input type="text" id="height">
+        <p class="text">Weight</p>
+        <input type="text" id="weight">
+        <p id="result"></p>
+        <button id="btn" onClick="bmi()">CALCULATE</button>
+      </div>
+    </div>
+
+    <div class="tracker" id="tracker">
+      <div class="head">
+        <h1><span>Exercise</span> Tracker</h1>
+      </div>
+      <div class="box">
+        <span class="title">Exercise Tracker</span>
+        <div class="dumb">
+        <a href="user.php"><img src="dumbell.png" class="dumbell" alt=""></a>
+        <span>Click on dumbell icon to use</span>
+      </div>
+        <div>
+          <strong>NEW</strong>
+          <p>Register Now! to get User ID</p>
+         
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Galary -->
+    <div class="galary" id="galary">
+      <div class="head">
+        <h1>Our <span>Galary</span></h1>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="gym6.jpg" alt="gym5">
+          <img src="gym5.jpg" alt="gym1">
+          <img src="gym18.png" alt="gym18">
+        </div>
+        <div class="column">
+          <img src="gym10.jpg" alt="gym4">
+          <img src="gym13.jpg" alt="gym7">
+          <img src="gym15.jpg" alt="gym8">
+        </div>
+
+        <div class="column">
+          <img src="gym3.jpg" alt="gym14">
+          <img src="gym12.jpg" alt="gym10">
+          <img src="gym1.jpg" alt="gym16">
+
+        </div>
+        <div class="column">
+          <img src="gym9.jpg" alt="gym13">
+          <img src="gym7.jpg" alt="gym12">
+          <img src="gym4.jpg" alt="gym3">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About Section -->
+  <div class="footer" id="about">
+    <div class="footerText">
+      <h1>About us<br>
+        <h3>The Muscle Monstor Gym</h3>
+        <p><br>Location : Raj Tower, Sonkatch Road<br>Pipalrawan (455118), Dewas (M.P.)</p>
+
+    </div>
+    <div class="footerText">
+      <h2>Plans</h2> <br>
+      <p>1 Month</p> <br>
+      <p>3 Months</p> <br>
+      <p>6 Months</p> <br>
+      <p>1 Year</p> <br>
+
+    </div>
+    <div class="footerText">
+      <h2>Programs</h2><br>
+      <p>Dance</p> <br>
+      <p>Cardio </p> <br>
+      <p>Heavy Workout</p> <br>
+      <p>Yoga Classes</p> <br>
+
+    </div>
+    <div class="footerText">
+      <h2>Contact US</h2><br>
+      <p>+91 99264 44096</p> <br>
+      <a href="https://www.instagram.com/yuvrajfitness_club/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA=="
+        target="_blank"><img src="instalogo.png" alt=""></a>
+      <p>musclemonstor45@gmail.com</p>
+
+      <div class="copyright">
+        <p>&#169;Ritesh Trivedi | Naman Bhawsar</p>
+      </div>
+    </div>
+
+  </div>
+  </div>
+  <script src="res.js"></script>
+</body>
+
+
+</html>
